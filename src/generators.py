@@ -1,4 +1,7 @@
-def filter_by_currency(list_transactions: list[dict], currency="") -> dict:
+from typing import Iterator
+
+
+def filter_by_currency(list_transactions: list[dict], currency="") -> Iterator[dict]:
     """Функция принимает на вход список словарей, представляющих транзакции.
     Возвращает итератор, который поочередно выдает транзакции,
     где валюта операции соответствует заданной (параметр currency)."""
@@ -20,7 +23,7 @@ def filter_by_currency(list_transactions: list[dict], currency="") -> dict:
         yield "Данной валюты нет в списке транзакций"
 
 
-def transaction_description(list_transactions: list[dict]) -> str:
+def transaction_description(list_transactions: list[dict]) -> Iterator[str]:
     """Функция генератор, принимает список словарей с транзакциями
     и возвращает описание каждой операции по очереди."""
 
