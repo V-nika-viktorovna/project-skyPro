@@ -1,4 +1,4 @@
-from src.masks import get_mask_card_numder, get_mask_account
+from src.masks import get_mask_account, get_mask_card_numder
 from src.processing import filter_by_state, sort_by_date
 
 print(get_mask_card_numder("1234567891234567"))
