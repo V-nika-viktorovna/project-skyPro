@@ -1,1 +1,1 @@
-summ_num error: summ_num() missing 2 required positional arguments: 'x' and 'y'. Inputs: (), {} 
+summ_num ok

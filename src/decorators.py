@@ -15,8 +15,9 @@ def log(filename='') -> str:
         def wrapper(*args, **kwargs):
             name_func = func.__name__
             try:
-                func(*args, **kwargs)
+                try_func = func(*args, **kwargs)
                 result = 'ok'
+                return try_func
             except Exception as e:
                 result = f'error: {e}. Inputs: {args}, {kwargs} '
             finally:
@@ -29,5 +30,6 @@ def log(filename='') -> str:
                 else:
                     result_decor = f'{name_func} {result}'
                     return result_decor
+
         return wrapper
     return inner

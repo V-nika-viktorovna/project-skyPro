@@ -16,8 +16,11 @@ def test_decorator_log_try_file_name_given_console_output(capsys):
         return x + y
 
     print(summ_num(8, 9))
+    text_file = open('mylog.txt', 'r')
+    text = text_file.read()
     captured = capsys.readouterr()
     assert captured.out == '\n'
+    assert text == 'summ_num ok'
 
 
 def test_decorator_log_error(capsys):
