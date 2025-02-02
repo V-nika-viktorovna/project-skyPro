@@ -31,7 +31,7 @@ def transaction_description(list_transactions: list[dict]) -> Iterator[str]:
         yield transactions.get('description')
 
 
-def card_number_generator(start: int, end: int) -> str:
+def card_number_generator(start: int, end: int) -> list[str]:
     """Функция генератор, выдает номера банковских карт в формате XXXX XXXX XXXX XXXX,
     где X — цифра номера карты. Генератор может сгенерировать номера карт в заданном диапазоне
     от 0000 0000 0000 0001 до 9999 9999 9999 9999.
