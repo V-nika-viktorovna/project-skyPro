@@ -5,6 +5,8 @@ from src.processing import filter_by_state, sort_by_date
 # Модуль processing
 
 # Тест Функции filter_by_state
+
+
 @pytest.mark.parametrize('value, expected', [('CANCELED', [{'id': 594226727, 'state': 'CANCELED', 'date': '2018-09-12T21:27:25.241689'}, {'id': 615064591, 'state': 'CANCELED', 'date': '2018-10-14T08:21:33.419441'}]),])
 def test_filter_by_state_try_state(dict_state, value, expected):
     assert filter_by_state(dict_state, value) == expected

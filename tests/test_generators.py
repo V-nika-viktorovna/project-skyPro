@@ -6,6 +6,8 @@ from src.generators import (card_number_generator, filter_by_currency,
 # Модуль generators
 
 # Тесты функции filter_by_currency
+
+
 def test_filter_by_currency_USD(transactions):
     result = filter_by_currency(transactions, 'USD')
     assert next(result) == {'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572',
