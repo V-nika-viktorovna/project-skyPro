@@ -19,7 +19,7 @@ def test_decorator_log_try_file_name_given_console_output(capsys):
     text_file = open('mylog.txt', 'r')
     text = text_file.read()
     captured = capsys.readouterr()
-    assert captured.out == '\n'
+    assert captured.out == '17\n'
     assert text == 'summ_num ok'
 
 

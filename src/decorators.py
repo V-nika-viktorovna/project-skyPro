@@ -16,20 +16,25 @@ def log(filename='') -> str:
             name_func = func.__name__
             try:
                 try_func = func(*args, **kwargs)
-                result = 'ok'
-                return try_func
             except Exception as e:
-                result = f'error: {e}. Inputs: {args}, {kwargs} '
+                result = f'{name_func} error: {e}. Inputs: {args}, {kwargs} '
+                return result
+            else:
+                result = f'{name_func} ok'
+                return result
             finally:
                 if filename:
-                    text_file = open(filename, 'w')
-                    result_decor = f'{name_func} {result}'
-                    text_file.write(result_decor)
-                    text_file.close()
-                    return ""
-                else:
-                    result_decor = f'{name_func} {result}'
-                    return result_decor
+                    with open(filename, 'w') as file:
+                        file.write(result)
+                    return try_func
 
         return wrapper
     return inner
+
+
+
+@log()
+def summ_num(x, y):
+    return x + y
+
+print(summ_num(8, 'fhgf'))
