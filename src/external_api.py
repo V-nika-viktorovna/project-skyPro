@@ -5,7 +5,7 @@ import requests
 from dotenv import load_dotenv
 
 
-def get_transaction_amount_rub(transaction={}) -> str:
+def get_transaction_amount_rub(transaction={}) -> float:
     """функция принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях,
     тип данных — float. Если транзакция была в USD или EUR, происходит обращение к внешнему API
     для получения текущего курса валют и конвертации суммы операции в рубли.
@@ -26,12 +26,12 @@ def get_transaction_amount_rub(transaction={}) -> str:
             if transaction.get('operationAmount').get('currency').get('code') == "USD":
                 restone = requests.get(f'https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount={result_amount}&date={date_year}-{date_month}-{date_day}', headers)
                 result_amount = restone.json().get('result')
-                return f'{round(result_amount, 2)} RUB'
+                return round(result_amount, 2)
             elif transaction.get('operationAmount').get('currency').get('code') == "EUR":
                 restone = requests.get(f'https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=EUR&amount={result_amount}&date={date_year}-{date_month}-{date_day}', headers)
                 result_amount = restone.json().get('result')
-                return f'{round(result_amount, 2)} RUB'
+                return round(result_amount, 2)
             else:
-                return f"{result_amount} {transaction.get('operationAmount').get('currency').get('code')}, данная валюта не конвертируется"
+                return "данная валюта не конвертируется"
         else:
-            return f"{result_amount} RUB"
+            return result_amount
