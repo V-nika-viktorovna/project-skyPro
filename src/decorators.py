@@ -30,11 +30,3 @@ def log(filename='') -> str:
 
         return wrapper
     return inner
-
-
-
-@log()
-def summ_num(x, y):
-    return x + y
-
-print(summ_num(8, 'fhgf'))
