@@ -1,0 +1,4 @@
+2025-02-07 12:32:37,465 masks INFO: Checking the correctness of the card number
+2025-02-07 12:32:37,465 masks ERROR: Number length error
+2025-02-07 12:32:37,465 masks INFO: Checking the correctness of the account number
+2025-02-07 12:32:37,465 masks INFO: Create an account number mask
