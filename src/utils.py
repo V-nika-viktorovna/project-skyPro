@@ -1,4 +1,17 @@
 import json
+import logging
+import os.path
+
+CURRENT_DIR = os.path.dirname(__file__)
+LOGS_DIR = os.path.join(CURRENT_DIR, '..', 'logs')
+log_file = os.path.join(LOGS_DIR, 'utils.log')
+
+logger = logging.getLogger('utils')
+logger.setLevel(logging.DEBUG)
+logger_hendler = logging.FileHandler(log_file, 'w')
+logger_formater = logging.Formatter('%(asctime)s %(name)s %(levelname)s: %(message)s')
+logger_hendler.setFormatter(logger_formater)
+logger.addHandler(logger_hendler)
 
 
 def get_data_json(way_file="") -> list:
@@ -7,9 +20,16 @@ def get_data_json(way_file="") -> list:
     функция возвращает пустой список."""
     data = []
     try:
+        logger.info('Open and read the file with transactions')
         with open(way_file, encoding='utf-8') as file:
             data = json.load(file)
-    except Exception:
+        logger.info('Transactions were read successfully')
+    except Exception as e:
+        logger.error(f'error: {e}')
         return data
     finally:
         return data
+
+
+if __name__ == '__main__':
+    get_data_json('C:/Users/PROGRAMM/PycharmProjects/work/data/operation.json')
