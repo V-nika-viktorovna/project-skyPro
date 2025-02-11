@@ -1,7 +1,6 @@
 import json
-import os.path
 
-from src.utils import get_data_json, CURRENT_DIR
+from src.utils import get_data_json
 
 
 def test_get_data_json_try():
