@@ -1,9 +1,14 @@
 import json
 import logging
+import os.path
+
+CURRENT_DIR = os.path.dirname(__file__)
+LOGS_DIR = os.path.join(CURRENT_DIR, '..', 'logs')
+log_file = os.path.join(LOGS_DIR, 'utils.log')
 
 logger = logging.getLogger('utils')
 logger.setLevel(logging.DEBUG)
-logger_hendler = logging.FileHandler('C:/Users/PROGRAMM/PycharmProjects/work/logs/utils.log', 'w')
+logger_hendler = logging.FileHandler(log_file, 'w')
 logger_formater = logging.Formatter('%(asctime)s %(name)s %(levelname)s: %(message)s')
 logger_hendler.setFormatter(logger_formater)
 logger.addHandler(logger_hendler)
