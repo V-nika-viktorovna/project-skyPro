@@ -1,8 +1,8 @@
-2025-02-11 17:20:32,430 utils INFO: Open and read the file with transactions
-2025-02-11 17:20:32,431 utils INFO: Transactions were read successfully
-2025-02-11 17:20:32,434 utils INFO: Open and read the file with transactions
-2025-02-11 17:20:32,434 utils ERROR: error: [Errno 2] No such file or directory: ''
-2025-02-11 17:20:32,436 utils INFO: Open and read the file with transactions
-2025-02-11 17:20:32,436 utils ERROR: error: [Errno 2] No such file or directory: 'C:/Users/PROGRAMM/PycharmProjects/work/data/way.txt'
-2025-02-11 17:20:32,439 utils INFO: Open and read the file with transactions
-2025-02-11 17:20:32,439 utils ERROR: error: [Errno 13] Permission denied: 'C:/Users/PROGRAMM/PycharmProjects/work/data/'
+2025-02-11 20:27:55,710 utils INFO: Open and read the file with transactions
+2025-02-11 20:27:55,711 utils INFO: Transactions were read successfully
+2025-02-11 20:27:55,715 utils INFO: Open and read the file with transactions
+2025-02-11 20:27:55,715 utils ERROR: error: [Errno 2] No such file or directory: ''
+2025-02-11 20:27:55,717 utils INFO: Open and read the file with transactions
+2025-02-11 20:27:55,718 utils ERROR: error: [Errno 2] No such file or directory: 'C:/Users/PROGRAMM/PycharmProjects/work/data/way.txt'
+2025-02-11 20:27:55,721 utils INFO: Open and read the file with transactions
+2025-02-11 20:27:55,721 utils ERROR: error: [Errno 13] Permission denied: 'C:/Users/PROGRAMM/PycharmProjects/work/data/'
