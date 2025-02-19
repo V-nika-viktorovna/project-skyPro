@@ -1,9 +1,5 @@
 from src.masks import get_mask_account, get_mask_card_numder
 
-# Модуль masks
-
-# Тесты функции get_mask_card_number
-
 
 def test_get_mask_card_number_try():
     assert get_mask_card_numder('1234567891234567') == '1234 56** **** 4567'
@@ -25,7 +21,6 @@ def test_get_mask_card_number_type():
     assert get_mask_card_numder(1234567891234567) == 'Введите номер в строчном формате'
 
 
-# Тесты функции get_mask_account
 def test_get_mask_account_try():
     assert get_mask_account("12345678912345678912") == "**8912"
 

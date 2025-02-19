@@ -1,36 +1,34 @@
-2025-02-11 20:27:55,640 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,641 masks INFO: Creating a card number mask
-2025-02-11 20:27:55,644 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,644 masks ERROR: Format error
-2025-02-11 20:27:55,647 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,647 masks ERROR: Number length error
-2025-02-11 20:27:55,650 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,650 masks ERROR: Number length error
-2025-02-11 20:27:55,652 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,655 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,655 masks INFO: Create an account number mask
-2025-02-11 20:27:55,658 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,658 masks ERROR: Number length error
-2025-02-11 20:27:55,661 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,661 masks ERROR: Number length error
-2025-02-11 20:27:55,664 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,664 masks ERROR: Number length error
-2025-02-11 20:27:55,667 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,726 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,726 masks INFO: Creating a card number mask
-2025-02-11 20:27:55,729 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,729 masks INFO: Create an account number mask
-2025-02-11 20:27:55,732 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,732 masks INFO: Creating a card number mask
-2025-02-11 20:27:55,735 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,735 masks INFO: Create an account number mask
-2025-02-11 20:27:55,738 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,738 masks INFO: Creating a card number mask
-2025-02-11 20:27:55,741 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,741 masks INFO: Creating a card number mask
-2025-02-11 20:27:55,744 masks INFO: Checking the correctness of the card number
-2025-02-11 20:27:55,744 masks INFO: Creating a card number mask
-2025-02-11 20:27:55,747 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,748 masks INFO: Create an account number mask
-2025-02-11 20:27:55,759 masks INFO: Checking the correctness of the account number
-2025-02-11 20:27:55,759 masks INFO: Create an account number mask
+2025-02-19 14:06:44,739 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,739 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,739 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,739 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,740 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the account number
+2025-02-19 14:06:44,740 masks INFO: Create an account number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,740 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,740 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,740 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,740 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,740 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,740 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,740 masks INFO: Checking the correctness of the account number
+2025-02-19 14:06:44,740 masks INFO: Create an account number mask
+2025-02-19 14:06:44,741 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,741 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,741 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,741 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,741 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,741 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,741 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,741 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,741 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,741 masks INFO: Creating a card number mask
+2025-02-19 14:06:44,741 masks INFO: Checking the correctness of the card number
+2025-02-19 14:06:44,741 masks INFO: Creating a card number mask

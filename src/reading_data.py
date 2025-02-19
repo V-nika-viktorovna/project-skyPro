@@ -10,7 +10,7 @@ def get_data_from_csv(way_file: str) -> list[dict]:
     При невозможности считать файл выдает сообщение об ошибке."""
 
     try:
-        with open(way_file) as file:
+        with open(way_file, encoding='utf-8') as file:
             reader_data_csv = csv.DictReader(file, delimiter=';')
             result = []
             for data in reader_data_csv:
@@ -52,5 +52,5 @@ def get_data_from_excel(way_file: str) -> list[dict]:
 
 
 if __name__ == '__main__':
-    print(get_data_from_csv('C:/Users/PROGRAMM/Downloads'))
+    print(get_data_from_csv('C:/Users/PROGRAMM/Downloads/transactions.csv'))
     print(get_data_from_excel('C:/Users/PROGRAMM/Downloads/transactions_excel.xlsx'))

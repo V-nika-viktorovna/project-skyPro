@@ -1,7 +1,7 @@
 def filter_by_state(get_list_dict: list[dict], state="EXECUTED") -> list[dict]:
     """Принимает список словарей и опционально значение для ключа state, по умолсанию
     значение данного ключа EXECUTED.
-    Возвращает список словарей, у которых ключа state соответствует искомому"""
+    Возвращает список словарей, у которых ключ state соответствует искомому"""
 
     up_list_dict = []
     if isinstance(get_list_dict, list):
