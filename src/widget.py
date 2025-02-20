@@ -8,19 +8,21 @@ def mask_account_card(account_card):
     card = []
     account = []
     card_str = ''
-    for index in account_card:
-        if index.isdigit():
-            card.append(index)
-            card_str = ''.join(card)
+    try:
+        for index in account_card:
+            if index.isdigit():
+                card.append(index)
+                card_str = ''.join(card)
+            else:
+                account.append(index)
+        if len(card_str) == 16:
+            return f"{''.join(account)}{get_mask_card_numder(card_str)}"
+        elif len(card_str) == 20:
+            return f"{''.join(account)}{get_mask_account(card_str)}"
         else:
-            account.append(index)
-
-    if len(card_str) == 16:
-        return f"{''.join(account)}{get_mask_card_numder(card_str)}"
-    elif len(card_str) == 20:
-        return f"{''.join(account)}{get_mask_account(card_str)}"
-    else:
-        return "Вы ввели некоректный номер карты или счета"
+            return "Вы ввели некоректный номер карты или счета"
+    except Exception:
+        return None
 
 
 def get_date(date: str) -> str:

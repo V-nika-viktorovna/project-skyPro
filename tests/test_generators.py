@@ -3,10 +3,6 @@ import pytest
 from src.generators import (card_number_generator, filter_by_currency,
                             transaction_description)
 
-# Модуль generators
-
-# Тесты функции filter_by_currency
-
 
 def test_filter_by_currency_USD(transactions):
     result = filter_by_currency(transactions, 'USD')
@@ -46,7 +42,6 @@ def test_filter_by_currency_is_missing(transactions):
     assert next(result) == "Данной валюты нет в списке транзакций"
 
 
-# Тесты функции transaction_description
 def test_transaction_description_try(transactions):
     result = transaction_description(transactions)
     assert next(result) == "Перевод организации"
@@ -56,7 +51,6 @@ def test_transaction_description_try(transactions):
     assert next(result) == "Перевод организации"
 
 
-# Тесты функции card_number_generator
 @pytest.mark.parametrize('value1, value2, expented', [(1, 10, ['0000 0000 0000 0001', '0000 0000 0000 0002', '0000 0000 0000 0003',
                                                                '0000 0000 0000 0004', '0000 0000 0000 0005', '0000 0000 0000 0006',
                                                                '0000 0000 0000 0007', '0000 0000 0000 0008', '0000 0000 0000 0009',
